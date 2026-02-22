@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A production-ready full-stack Lead Management System built with Next.js and Supabase.This app allows businesses to capture leads, qualify them, and manage them through a clean admin dashboard..
 
-## Getting Started
+Live Demo: https://lead-management-system-psi.vercel.app/
+Repository: https://github.com/PayalSrivastava26/lead-management-system
 
-First, run the development server:
+✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Lead capture form
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Intake & qualification logic
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Supabase database integration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Admin dashboard to view all leads
 
-## Learn More
+Real-time data fetching (no caching issues)
 
-To learn more about Next.js, take a look at the following resources:
+Deployed on Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+System Architecture
+User (Form Submission)
+        ↓
+Next.js Frontend (Client)
+        ↓
+/api/lead (Server Route)
+        ↓
+Intake Agent → Qualification Agent
+        ↓
+Supabase Database (PostgreSQL)
+        ↓
+Admin Dashboard (Server Component)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Future Improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Admin authentication
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Lead status update feature
+
+Email notifications on new lead
+
+AI-powered lead scoring
+
+Role-based access control
+
+
+Built by Payal Srivastava
+If you found this project interesting, feel free to connect!
